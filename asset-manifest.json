@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/MovieVault/static/css/main.8afc3781.css",
+    "main.js": "/MovieVault/static/js/main.fd7b7844.js",
+    "static/media/boxicons.svg": "/MovieVault/static/media/boxicons.045b05bf2dc119267a90.svg",
+    "static/media/footer-bg.jpg": "/MovieVault/static/media/footer-bg.67e95f05e76a8cebf7e2.jpg",
+    "static/media/boxicons.eot": "/MovieVault/static/media/boxicons.092b78589f3f53e60030.eot",
+    "static/media/boxicons.woff": "/MovieVault/static/media/boxicons.0f4528cf3c75a4b361c0.woff",
+    "static/media/boxicons.ttf": "/MovieVault/static/media/boxicons.cbd149c55e2396cb52e7.ttf",
+    "static/media/boxicons.woff2": "/MovieVault/static/media/boxicons.8d765747a5588f36ff61.woff2",
+    "static/media/tmovie.png": "/MovieVault/static/media/tmovie.fe0e4305a584115a888c.png",
+    "index.html": "/MovieVault/index.html",
+    "main.8afc3781.css.map": "/MovieVault/static/css/main.8afc3781.css.map",
+    "main.fd7b7844.js.map": "/MovieVault/static/js/main.fd7b7844.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8afc3781.css",
+    "static/js/main.fd7b7844.js"
+  ]
+}
