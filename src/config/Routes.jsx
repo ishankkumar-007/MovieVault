@@ -5,10 +5,15 @@ import { Route, Switch } from 'react-router-dom';
 import Home from '../pages/Home';
 import Catalog from '../pages/Catalog';
 import Detail from '../pages/detail/Detail';
+import Faq from '../pages/Faq'; // <-- import the FAQ component
 
 const Routes = () => {
     return (
         <Switch>
+            <Route
+                path='/faq'
+                component={Faq}
+            />
             <Route
                 path='/:category/search/:keyword'
                 component={Catalog}
