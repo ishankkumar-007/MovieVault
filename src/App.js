@@ -9,7 +9,7 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Routes from './config/Routes';
 import ManualPage from './pages/ManualPage';
-import Chatbot from './components/chatbot/Chatbot'; // Make sure this path is correct
+import Chatbot from './components/chatbot/Chatbot';
 
 function AppContent() {
   const history = useHistory();
@@ -17,7 +17,7 @@ function AppContent() {
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.key === 'F1') {
-        event.preventDefault(); // prevent default browser help
+        event.preventDefault();
         history.push('/manual');
       }
     };
@@ -33,14 +33,14 @@ function AppContent() {
         <Route component={Routes} />
       </Switch>
       <Footer />
-      <Chatbot /> {/* Chatbot visible on all pages */}
+      <Chatbot />
     </>
   );
 }
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/MovieVault">
       <AppContent />
     </BrowserRouter>
   );
