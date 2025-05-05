@@ -90,6 +90,20 @@ const HeroSlideItem = props => {
                 <div className="hero-slide__item__content__info">
                     <h2 className="title">{item.title}</h2>
                     <div className="overview">{item.overview}</div>
+
+                    {/* Persuasion Psychology Tags */}
+                    <div className="persuasion-tags" style={{ margin: '10px 0' }}>
+                        <div style={{ backgroundColor: '#3498db', color: 'white', padding: '5px 10px', borderRadius: '5px', display: 'inline-block', marginRight: '10px' }}>
+                            ⭐ 8.7 IMDb · 1.2M viewers
+                        </div>
+                        <div style={{ backgroundColor: '#e74c3c', color: 'white', padding: '5px 10px', borderRadius: '5px', display: 'inline-block', marginRight: '10px' }}>
+                            ⏰ Available for 2 days only!
+                        </div>
+                        <div style={{ color: '#f1c40f', marginTop: '5px', fontSize: '0.9rem' }}>
+                            🎯 Recommended based on your history
+                        </div>
+                    </div>
+
                     <div className="btns">
                         <Button onClick={() => hisrory.push('/movie/' + item.id)}>
                             Watch now
