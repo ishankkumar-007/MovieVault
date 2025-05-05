@@ -1,0 +1,140 @@
+.chatbot {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+    font-family: 'Arial', sans-serif;
+}
+
+.chatbot__toggle {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #b00610;
+    }
+}
+
+.chatbot__box {
+    width: 400px;
+    max-height: 500px;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    animation: fadeInUp 0.3s ease;
+}
+
+
+.chatbot__header {
+    background-color: #111;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+
+.chatbot__close-btn {
+    background: transparent;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+.chatbot__messages {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    background-color: #181818;
+}
+
+.chatbot__message {
+    padding: 0.6rem 0.9rem;
+    border-radius: 8px;
+    max-width: 80%;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #fff;
+    word-wrap: break-word;
+}
+
+.chatbot__message--bot {
+    background-color: #333;
+    align-self: flex-start;
+}
+
+.chatbot__message--user {
+    background-color: #e50914;
+    align-self: flex-end;
+}
+
+.chatbot__input {
+    display: flex;
+    padding: 0.8rem;
+    border-top: 1px solid #333;
+    background-color: #111;
+}
+
+.chatbot__input input {
+    flex: 1;
+    padding: 0.6rem 0.8rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    background-color: #2a2a2a;
+    color: white;
+
+    &::placeholder {
+        color: #aaa;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.chatbot__send-btn {
+    background-color: #e50914;
+    color: white;
+    padding: 0.6rem 1rem;
+    margin-left: 0.6rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #b00610;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

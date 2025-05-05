@@ -8,7 +8,8 @@ import { useEffect } from 'react';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Routes from './config/Routes';
-import ManualPage from './pages/ManualPage'; // make sure this path is correct
+import ManualPage from './pages/ManualPage';
+import Chatbot from './components/chatbot/Chatbot'; // Make sure this path is correct
 
 function AppContent() {
   const history = useHistory();
@@ -32,6 +33,7 @@ function AppContent() {
         <Route component={Routes} />
       </Switch>
       <Footer />
+      <Chatbot /> {/* Chatbot visible on all pages */}
     </>
   );
 }
