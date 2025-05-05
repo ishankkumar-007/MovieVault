@@ -1,0 +1,113 @@
+/* src/scss/ManualPage.scss */
+
+// Import theme variables
+@use "./variables" as *;
+
+.manual-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: auto;
+  min-height: 100vh;  // Ensures the content stretches to the bottom of the page
+  background-color: $body-bg;
+  padding: 1rem;
+  padding-top: 10rem;  // Add space between the top of the page and navbar
+}
+
+.manual-content {
+  background: $black;  // Black background for the content box
+  padding: 2rem;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.manual-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: $txt-color;
+}
+
+.manual-description {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: $txt-color;
+}
+
+.manual-section {
+  margin-bottom: 2rem;
+}
+
+.manual-section h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #f0a500;  // Softer golden color for section headings
+}
+
+.manual-section p {
+  font-size: 1rem;
+  color: $txt-color;
+}
+
+.manual-section ul,
+.manual-section ol {
+  margin-left: 1.5rem;
+  font-size: 1rem;
+  color: $txt-color;
+}
+
+.manual-section a {
+  color: $main-color;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: $mobile-width) {
+  .manual-content {
+    padding: 1.5rem;
+  }
+
+  .manual-title {
+    font-size: 1.5rem;
+  }
+
+  .manual-description {
+    font-size: 0.9rem;
+  }
+
+  .manual-section h2 {
+    font-size: 1.1rem;
+  }
+
+  .manual-section p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .manual-content {
+    padding: 1.5rem;
+  }
+
+  .manual-title {
+    font-size: 1.8rem;
+  }
+
+  .manual-description {
+    font-size: 1rem;
+  }
+
+  .manual-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .manual-section p {
+    font-size: 1rem;
+  }
+}
